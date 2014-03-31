@@ -1,0 +1,18 @@
+
+.marketing-section.marketing-benefits {
+		background: url(/images/subtle-pattern-10.jpg) 50% 0 repeat fixed;
+		-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+.marketing-section.marketing-section-enterprise {
+				-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+				box-shadow: 0 0 50px rgba(0,0,0,0.8);
+				max-height:660px;
+}
+
+.huge-octicon {
+    display: inline-block;
+    font: 60px/1 octicons;
+    text-decoration: none;
+}
