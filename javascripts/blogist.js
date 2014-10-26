@@ -9,6 +9,7 @@ var GIST_DIGEST_URL = 'get@http://gist.github.com.ru/jcouyang/46bb290f1b99eef156
 var bloglistModelFor = function(name){
 	return Model.extend({
 		dataOptions:{
+      data: {username:username},
       dataType:'jsonp'
     }
 	});
