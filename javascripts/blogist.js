@@ -4,12 +4,13 @@ var blogdetailModel = Model.extend({
 	dataOptions:{dataType:"jsonp"}
 });
 
-var GIST_DIGEST_URL = 'post@https://gist.github.com.ru/jcouyang/46bb290f1b99eef15639';
+var GIST_DIGEST_URL = 'get@http://gist.github.com.ru/jcouyang/46bb290f1b99eef15639';
 
 var bloglistModelFor = function(name){
 	return Model.extend({
 		dataOptions:{
-			crossDomain: true, data:{base_url:"https://gist.github.com/" + name}}
+      dataType:'jsonp'
+    }
 	});
 };
 
@@ -27,7 +28,7 @@ var BloglistView = View.extend({
 	el: $("#blogist"),
 	template:"src/templates/gistlist.html",
 	preProcessData:function(data){
-		return {results: JSON.parse(data.results)};
+		return {results: data.result};
 	}
 });
 
