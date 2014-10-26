@@ -149,3 +149,62 @@ root: root
 };
 })();
 })();
+(function() {(window.nunjucksPrecompiled = window.nunjucksPrecompiled || {})["src/templates/nav.html"] = (function() {function root(env, context, frame, runtime, cb) {
+var lineno = null;
+var colno = null;
+var output = "";
+try {
+output += "<figure id=\"logo_top\" class=\"\">\n\t<a href=\"#/\">";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"blog_title", env.autoesc), env.autoesc);
+output += "</a>\n</figure>\n<figure id=\"hamburger\">\n\t<a href=\"#menu\" id=\"hamburger_button\">Menu</a>\n</figure>\n<ul id=\"dropdown\" class=\"onblog\">\n\t<li class=\"dropdown_message\">\n\t\t<a href=\"#/\"><span class=\"logoize\">";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"blog_title", env.autoesc), env.autoesc);
+output += "</span> ";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"description", env.autoesc), env.autoesc);
+output += "</a>\n\t</li>\n\t<li><a href=\"https://github.com/";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"github_name", env.autoesc), env.autoesc);
+output += "\">@";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"github_name", env.autoesc), env.autoesc);
+output += "</a></li>\n\t<li><a href=\"https://gist.github.com/";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"github_name", env.autoesc), env.autoesc);
+output += ".atom\">rss feed</a></li>\n\t";
+if(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"about_gist", env.autoesc)) {
+output += "\n\t<li><a href=\"#/gist/";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"about_gist", env.autoesc), env.autoesc);
+output += "\">about</a></li>\n\t";
+;
+}
+output += "\n</ul>\n";
+cb(null, output);
+;
+} catch (e) {
+  cb(runtime.handleError(e, lineno, colno));
+}
+}
+return {
+root: root
+};
+})();
+})();
+(function() {(window.nunjucksPrecompiled = window.nunjucksPrecompiled || {})["src/templates/title.html"] = (function() {function root(env, context, frame, runtime, cb) {
+var lineno = null;
+var colno = null;
+var output = "";
+try {
+output += "<a href=\"#/\">";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"blog_title", env.autoesc), env.autoesc);
+output += "</a> <a href=\"https://gist.github.com/";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"github_name", env.autoesc), env.autoesc);
+output += ".atom\"><span class=\"mega-octicon octicon-bookmark\" style=\"cursor:pointer;min-width: 32px; color:orange\"></span></a>\n<p class=\"lead\">";
+output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "data")),"description", env.autoesc), env.autoesc);
+output += "</p>\n";
+cb(null, output);
+;
+} catch (e) {
+  cb(runtime.handleError(e, lineno, colno));
+}
+}
+return {
+root: root
+};
+})();
+})();
